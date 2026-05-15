@@ -2,10 +2,30 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Api</title>
+    <title>PokéBusca</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="container">
+        <h1>PokéAPI Search</h1>
+        
+        <div class="busca">
+            <input type="text" id="inputPokemon" placeholder="Digite o nome (ex: pikachu)">
+            <button id="botaoBuscar">Buscar</button>
+        </div>
+
+        <div id="cartaoPokemon" class="cartao hidden">
+            <img id="fotoPokemon" src="" alt="Imagem do Pokémon">
+            <h2 id="nomePokemon"></h2>
+            <p><strong>Tipo:</strong> <span id="tipoPokemon"></span></p>
+            <p><strong>Peso:</strong> <span id="pesoPokemon"></span> kg</p>
+        </div>
+        
+        <p id="mensagemErro" class="erro hidden">Ops! Pokémon não encontrado.</p>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
